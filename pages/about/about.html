@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNGWC70ENR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HNGWC70ENR');
+</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="icon" type="image/x-icon" href="../../images/logo.png" />
+    <title>About</title>
+  </head>
+  <body>
+     <!-- Bootstrap core css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Material Design Bootstrap-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!--js link-->
+    <script type="text/javascript" src="../../javascript/javscript.js"></script>
+  </head>
+  <body>
+    <header id="header" class="fixed-top header-transparent">
+      <div class="container d-flex">
+        <div class="logo">
+          <a href="../../index.html">
+            <img src="../../images/logo.png" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <div class="navbar-nav ms-auto mb-2 mb-lg-0 nav-btn">
+          <img onclick="openNav()" src="../../images/menu-icon.svg"  id="btnnav" alt="">
+        </div>
+        <div id="mysidepanel" class="sidepanel">
+          <div class="container logo">
+            <a href="../../index.html">
+              <img src="../../images/logo.png" alt="" class="img-fluid" />
+            </a>
+          </div>
+          <div class="container navbar-nav ms-auto mb-2 mb-lg-0 cls-btn">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <div class="side row row-cols-1 row-cols-md-3 g-4" style="background-color: #ffffff;">
+            <div class="col">
+              <div class="align-items-left justify-content-between">
+                <div class="container">
+                  <left><a href="../../pages/talk/talk.html" onclick="closeNav()"><h3 class="card-title">Talk</h3></a></left>
+                  <br/><br class="hidden-mobile" /><br class="hidden-mobile"/>
+                  <left><a href="../../pages/talk/talk.html#centric" onclick="closeNav()">Human centric design</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/talk/talk.html#light" onclick="closeNav()">Sustainability</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/talk/talk.html#technology" onclick="closeNav()">Technology</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-left justify-content-between">
+                <div class="container">
+                  <left><a href="../../pages/about/about.html" onclick="closeNav()"><h3 class="card-title">About</h3></a></left>
+                  <br/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/about/about.html#company" onclick="closeNav()">Company</a></left><br  class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/about/about.html#possibilities" onclick="closeNav()">Possibilities</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/about/about.html#services" onclick="closeNav()">Services</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="align-items-left justify-content-between">
+                <div class="container">
+                  <left><a href="../../pages/light/light.html" onclick="closeNav()"><h3 class="card-title">Light</h3></a></left>
+                  <br/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/concepts/concepts.html" onclick="closeNav()">Concepts</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/light-school/light-school.html" onclick="closeNav()">Light school</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                  <left><a href="../../pages/projects/project.html" onclick="closeNav()">Projects</a></left><br class="hidden-mobile"/><br class="hidden-mobile"/><br class="hidden-mobile"/>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </header>
+    
+    <!-- top section  
+
+    <div class="background" id="company">
+      <p><span> kaash </span> light engineers</p>
+    </div>    -->
+
+    <div class="text-background">
+      <div class="text1" >
+        <p id="text1">Kaash Light Engineers <br>
+          <br>
+        Light for people, their cities and its architecture. As lighting connoisseurs, we are always working towards sustainable human-centric lighting solutions. Using full potential of light we create comfortable hospitals, inspiring institutions and playful spaces. Using full potential of light, we build healthier communities and inclusive ecosystem.We help businesses go green in their energy consumption with advanced, efficient and sustainable light solutions for their infrastructure.</p>
+      </div>
+      <div class="text2">
+        <p>
+          From heritage buildings to sports arenas, from public parks to your private zones, we aim to combine modern technology with energy efficient lighting solutions to build heathier communities with inclusive ecosystem.</p>
+      </div>
+    </div>
+    <div class="text-background">
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div class=" d-flex flex-column align-items-center justify-content-center">
+          <img class="img-fluid" src="../../images/about/cluster-balloon-3856816-3235761 1.png" alt="">
+          <p class="text-center">100 + <br> Projects</p>
+        </div>
+        <div class=" d-flex flex-column align-items-center justify-content-center">
+          <img class="img-fluid" src="../../images/about/cluster-balloon-3856817-3235762 2.png" alt="">
+          <p class="text-center">7 + <br>
+            Countries</p>
+        </div>
+        
+      </div>
+      <div class=" d-flex marg flex-column align-items-center justify-content-center">
+        <img src="../../images/about/cylinders-3856884-3235829 1.png" alt="">
+        <p class="text-center">10+ <br> 
+          Years</p>
+        </div>
+    </div>
+
+<!-- body  -->
+
+<div class="projects ps pe py" id="possibilities">
+      <div class="sticky-text">
+       <h1>Light possibilities with Kaash</h1>
+      </div>
+      <div class="content">
+        <div class="w-100 marg d-flex align-items-center align-items-md-start justify-content-md-start">
+          <div class="text">
+            <p>The blend of science and design gives light a unique <span class="orange-text"> invisible identity </span> unless it falls and reflects. We are always excited to express this passion for light in every possible opportunity.</p>
+          </div>
+        </div>
+        <div class="w-100 marg d-flex align-items-center justify-content-md-end">
+          <div class="text">
+            <p>Our enthusiasm holds no boundaries to the scale and nature of project. From single room bunker in a basement to multi-story tower, we are there to help you create the perfect atmosphere you desire.</p>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-end">
+          <div class="text d-flex">
+            <p class="vertical-text">Publics parks</p>
+           <img class="img-fluid" src="../../images/about/playground-4509360-3732995 1.png" alt="">
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-start">
+          <div class="text d-flex">
+            <p class="vertical-text">Heritage buildings</p>
+           <img class="img-fluid" src="../../images/about/castle-6330016-5204738 1.png" alt="">
+          </div>
+        </div>
+        <div class="talk-to d-flex align-item-right justify-content-end">
+          <div class="text">
+            <p style="font-weight: 600; class="align-items-right">If you are a developer, planner or an architect </p>
+            <div class="d-flex my-5">
+              <a href="#footer">
+                <i class="fa-solid me-5 arrow fa-arrow-right"></i>
+              </a>
+              <a href="#footer">
+                <p class="orange-text mx-5">Talk to us </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-start">
+          <div class="text d-flex">
+            <p style="margin-right: -3rem; margin-bottom:2rem;" class="vertical-text">Sports facilities</p>
+           <img class="img-fluid" src="../../images/about/baseball-6358275-5272660 1.png" alt="">
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-end">
+          <div class="text d-flex">
+            <p class="vertical-text">Hotels and Restaurants</p>
+           <img class="img-fluid" src="../../images/about/hotel-6204320-5073132 1.png" alt="">
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-start">
+          <div class="text d-flex flex-column align-items-center">
+            <img class="img-fluid" src="../../images/about/office-meeting-4120729-3415026 1.png" alt="">
+            <p class="normal-text">Offices and Co-working</p>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-end">
+          <div class="text d-flex flex-column align-items-center">
+            <img class="img-fluid" src="../../images/about/house-6204321-5073133 1.png" alt="">
+            <p class="normal-text">Homes and apartments</p>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-start">
+          <div class="text d-flex flex-column align-items-center">
+            <img class="img-fluid" src="../../images/about/travel-destination-5523205-4629579 1.png" alt="">
+            <p style="margin-top: -4rem;" class="normal-text">Transportation hubs</p>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-end">
+          <div class="text d-flex flex-column align-items-center">
+            <img class="img-fluid" src="../../images/about/chruch-5463298-4553219 1.png" alt="">
+            <p class="normal-text">Places of worship</p>
+          </div>
+        </div>
+        <div class="talk-to d-flex align-item-right justify-content-start">
+          <div class="text">
+            <p style="font-weight: 600; class="align-items-right">If you are public administration or a private business </p>
+            <div class="d-flex my-5">
+              <a href="#footer">
+                <i class="fa-solid me-5 arrow fa-arrow-right"></i>
+              </a>
+              <a href="#footer">
+                <p class="orange-text mx-5">Talk to us </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-end">
+          <div class="text d-flex">
+            <img class="img-fluid" src="../../images/about/hospital-4521372-3754589 1.png" alt="">
+            <p class="vertical-text">Health care infrastructure</p>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-start">
+          <div class="text d-flex flex-column align-items-center">
+            <img class="img-fluid" src="../../images/about/coffee-shop-6585999-5502830 1.png" alt="">
+            <p style="margin-top: -2rem;" class="normal-text">Retail and commercial centres</p>
+          </div>
+        </div>
+        <div class="w-100 my-5 d-flex align-items-center justify-content-md-end">
+          <div class="text d-flex">
+            <p style="margin-bottom:2rem;" class="vertical-text">Places of entertainment</p>
+            <img class="img-fluid" src="../../images/about/joglo-house-3277620-2753986 1.png" alt="">
+          </div>
+        </div>
+        <div class="w-100 marg d-flex align-items-center justify-content-md-start">
+          <div class="text d-flex flex-column align-items-center">
+            <img style="margin-top:4rem;" class="img-fluid" src="../../images/about/solar-house-6624205-5497796 1.png" alt="">
+            <p class="normal-text">Factories and Warehouses</p>
+          </div>
+        </div>
+        <div class="talk-to w-100 d-flex align-item-right justify-content-start">
+          <div class="text w-100">
+            <p style="font-weight: 600"; style=" margin-bottom: -2rem;">For any kind of project we are happy to discuss.</p>
+            <div class="d-flex my-5 justify-content-between">
+              <a href="#footer">       
+                <i class="fa-solid arrow fa-arrow-right"></i>
+              </a>
+              <a href="#footer">
+                <p style="margin-top: rem;" class="orange-text ps mx-5">Talk to us </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+<!-- services we offer  -->
+
+<div class="services ps pe py" id="services">
+      <div class="sticky-text">
+       <h1>Services we offer</h1>
+      </div>
+      <div class="text pad-x  my-5">
+        <p>How can we help you in finding the perfect <span class="orange-text"> light </span>light with minimum foot print.  </p>
+      </div>
+      
+      <div class="d-md-flex marg pad-x justify-content-start">
+        <div class="list">
+          <p>
+            Human-centric design
+          </p>
+          <ul class="demo">
+            <li>.Human-centric design</li>
+            <li>.Light plans and drawings</li>
+            <li>.Light study report</li>
+            <li>.Light calculations</li>
+            <li>.Light for branding</li>
+            <li>.Light effects and program</li>
+          </ul>
+        </div>
+        <img class="img-fluid mt-5 m-md-0" src="../../images/about/design-app-4291901-3569933 1.png" alt="">
+      </div>
+
+      <div class="d-md-flex marg pad-x">
+        <div class="list">
+          <p>
+            Sustainable spaces
+          </p>
+          <ul class="demo">
+            <li>.Light energy survey</li>
+            <li>.Efficient light solutions</li>
+            <li>.Daylight harvesting</li>
+            <li>.Carbon footprint reporting</li>
+            <li>.Training and workshops</li>
+          </ul>
+        </div>
+        <img class="img-fluid mt-5 m-md-0" src="../../images/about/green-electricity-3715205-3105188 1.png" alt="">
+      </div>
+     
+
+
+      <div class="d-md-flex marg pad-x">
+        <div class="list">
+          <p>
+            Light engineering
+          </p>
+          <ul class="demo">
+            <li>.Integrated light solution</li>
+            <li>.Product engineering</li>
+            <li>.Time driven light scenes</li>
+            <li>.Wireless light control</li>
+            <li>.Projection mapping</li>
+            <li>.Scenography</li>
+            <li>.15 parameter product analysis</li>
+          </ul>
+        </div>
+        <img class="img-fluid mt-5 ms-md-4 m-md-0" src="../../images/about/design-idea-5374077-4496046 1.png" alt="">
+      </div>
+      <div class="last-text w-100 pad-x text w-100">
+        <p style="font-weight: 600;"> Seeking solutions for your space </p>
+        <div class="d-flex justify-content-between">
+          <i class="fa-solid me-5 arrow fa-arrow-right"></i>
+          <a class="orange-text me-5 ms-md-5" href="#footer">Talk to us</a>
+        </div>
+      </div>
+</div>
+
+       <!-- upper-footer  -->
+
+     <section class="upper-section-footer" id="footer">
+      <div class="upper-container" style="padding: 20%;">
+        <div class="upper-container-main">
+          <div class="upper-text">
+            <h2 class="my-5" style="color: #ff4700; font-weight: 600;font-size: 4rem">
+              Light on your mind ?
+            </h2>
+            <div class="d-flex w-100 align-items-end flex-column">
+              <div class="text-start">
+                <p class="m-0" style="color: #ffffff; font-weight: 600;font-size: 2rem">
+                  We are always open for new collaborations.
+                </p>
+                <p>
+                  <span style="color: #ff4700; font-weight: 600;font-size: 2rem">
+                    Say Hi !
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="margin: 8rem 35% 8rem 0rem;" >
+            <div
+            class="upper-contact label d-flex justify-content-center align-items-center"
+            >
+            
+            <div style="color: #ffffff;">
+              <p style="margin-bottom: 0;white-space: nowrap;">+352 691 566 820</p>
+              <p style="margin-bottom: 0;">moien@kaash.eu</p>
+              <p style="margin-bottom: 0;white-space: nowrap;">41a rue des romains</p>
+              <p style="margin-top: -0.1rem;">8041, Luxembourg</p>
+              <div class="d-flex label justify-content-start align-items-start">
+                <a style="color:#ffffff;" href="https://www.instagram.com/kaash_lightengineers">
+                  <i style="margin: 0rem;" class="fa-brands fa-instagram"></i>
+                </a>
+                <a style="color: #ffffff;" href="https://www.linkedin.com/company/kaash/">
+                  <i style="margin-left: 1rem;" class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="upper-form d-flex align-items-center justify-content-end">
+           
+            <form method="post" action="./mail.php">
+              <div class="start-form d-flex flex-column align-items-center">
+                <div class="d-flex w-100 flex-column" style="color: #ffffff;">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <label class="text" for="name">Name</label>
+                    <input type="text" name="name" class="my-1 ms-3" />
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <label class="text" for="name">Email</label>
+                    <input type="text" name="email" class="my-1 ms-3" />
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <label class="text" for="name">Contact</label>
+                    <input type="text" name="contact" class="my-1 ms-3" />
+                  </div>
+                   <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <label class="text" for="name">Message</label>
+                    <input type="text" name="message" class="my-1 ms-3" />
+                  </div>
+                </div>
+                <div class="sub-but">
+                  <input style="width: 5rem;margin-top: 10px;color: #ffffff;" type="submit" value="Submit">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- lower footer  -->
+
+    <section>
+      <div class="lower-container">
+        <div class="text-row">
+          <div class="row">
+            <ul class="d-flex flex-column">
+              <a href="/index.html">
+                <li>Kaash</li>
+              </a>
+              <a  href="/pages/talk/talk.html">
+                <li>Talk</li>
+              </a>
+              <a href="/pages/about/about.html">
+                <li>About</li>
+              </a>
+              <a href="/pages/light/light.html">
+                <li>Light</li>
+              </a>
+            </ul>
+          </div>
+          <div class="row">
+            <ul class="d-flex flex-column">
+              <a href="/pages/talk/talk.html#centric">
+                <li>Human-centric design</li>
+              </a>
+              <a href="/pages/talk/talk.html#light">
+                <li>Sustainability</li>
+              </a>
+              <a href="/pages/talk/talk.html#technology">
+                <li>Technology</li>
+              </a>
+              <a href="/pages/talk/talk.html#processes">
+                <li>Processes</li>
+              </a>
+            </ul>
+          </div>
+          <div class="row">
+            <ul class="d-flex flex-column">
+              <a href="/pages/light-school/light-school.html">
+                <li>Light school</li>
+              </a>
+              <a href="/pages/concepts/concepts.html">
+                <li >Concepts</li>
+              </a>
+              <a href="/pages/projects/project.html">
+                <li >Projects</li>
+              </a>
+              <a href="/pages/light-school/light-school.html">
+                <li>Trainings</li>
+              </a>
+            </ul>
+          </div>
+          <div class="row">
+            <ul class="d-flex flex-column">
+              <a href="/pages/about/about.html">
+                <li>History</li>
+              </a>
+              <a href="/pages/about/about.html">  
+                <li>Company</li>
+              </a>
+              <a href="/pages/about/about.html">
+                <li>Partners</li>
+              </a>
+              <a href="/pages/about/about.html">
+                <li>Careers</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+   <div class="image-row" style="padding: 0 10%;">
+         <div class="kaash-container"> 
+           <p style="margin-top: 20px;" id="kaashl">Kaash - Light</p>
+          <p style="margin-top: 20px;" id="kaashe">Engineers</p>
+        </div>
+          <div class="eu-container">
+            <img src="/images/Footer/image 84.png" id="circle" alt="" />
+          <p id="eu">eu</p>
+          </div>
+            <img src="/images/Footer/Luxembourg White 2 (2).png" id="luxembourg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--cursor-->
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big ">
+        <svg height="40" width="40">
+          <circle cx="20" cy="20" r="20" stroke-width="0"></circle>
+        </svg>
+      </div>
+      
+      <div class="cursor__ball cursor__ball--small">
+        <svg height="10" width="10">
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+        </svg>
+      </div>
+    </div>
+
+
+    <!-- smooth scrolling script  -->
+    
+  <script>
+    /*! luxy.js v0.1.0 | (c) 2018 Mineo Okuda | MIT License | git+ssh://git@github.com:min30327/luxy.js.git */ !(function(t, e) {
+      "use strict";
+      "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? module.exports = e() : t.luxy = e()
+    })(this, (function() {
+      "use strict";
+      var t = {
+          wrapper: "#luxy",
+          targets: ".luxy-el",
+          wrapperSpeed: .08,
+          targetSpeed: .02,
+          targetPercentage: .1
+        },
+        e = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      window.requestAnimationFrame = e;
+      var i = window.cancelAnimationFrame || window.mozCancelAnimationFrame,
+        s = function() {
+          for (var t = {}, e = 0, i = arguments.length; e < i; e++) {
+            var s = arguments[e];
+            !(function(e) {
+              for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i])
+            })(s)
+          }
+          return t
+        },
+        r = function() {
+          this.Targets = [], this.TargetsLength = 0, this.wrapper = "", this.windowHeight = 0, this.wapperOffset = 0
+        };
+      return r.prototype = {
+        isAnimate: !1,
+        isResize: !1,
+        scrollId: "",
+        resizeId: "",
+        init: function(e) {
+          if (this.settings = s(t, e || {}), this.wrapper = document.querySelector(this.settings.wrapper), "undefined" === this.wrapper) return !1;
+          this.targets = document.querySelectorAll(this.settings.targets), document.body.style.height = this.wrapper.clientHeight + "px", this.windowHeight = window.clientHeight, this.attachEvent(), this.apply(this.targets, this.wrapper), this.animate(), this.resize()
+        },
+        apply: function(t, e) {
+          this.wrapperInit(), this.targetsLength = t.length;
+          for (var i = 0; i < this.targetsLength; i++) {
+            var s = {
+              offset: t[i].getAttribute("data-offset"),
+              speedX: t[i].getAttribute("data-speed-x"),
+              speedY: t[i].getAttribute("data-speed-Y"),
+              percentage: t[i].getAttribute("data-percentage"),
+              horizontal: t[i].getAttribute("data-horizontal")
+            };
+            this.targetsInit(t[i], s)
+          }
+        },
+        wrapperInit: function() {
+          this.wrapper.style.width = "100%", this.wrapper.style.position = "fixed"
+        },
+        targetsInit: function(t, e) {
+          this.Targets.push({
+            elm: t,
+            offset: e.offset ? e.offset : 0,
+            horizontal: e.horizontal ? e.horizontal : 0,
+            top: 0,
+            left: 0,
+            speedX: e.speedX ? e.speedX : 1,
+            speedY: e.speedY ? e.speedY : 1,
+            percentage: e.percentage ? e.percentage : 0
+          })
+        },
+        scroll: function() {
+          document.documentElement.scrollTop || document.body.scrollTop;
+          this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          this.scrollTop, this.windowHeight;
+          this.wrapperUpdate(this.scrollTop);
+          for (var t = 0; t < this.Targets.length; t++) this.targetsUpdate(this.Targets[t])
+        },
+        animate: function() {
+          this.scroll(), this.scrollId = e(this.animate.bind(this))
+        },
+        wrapperUpdate: function() {
+          this.wapperOffset += (this.scrollTop - this.wapperOffset) * this.settings.wrapperSpeed, this.wrapper.style.transform = "translate3d(0," + Math.round(100 * -this.wapperOffset) / 100 + "px ,0)"
+        },
+        targetsUpdate: function(t) {
+          t.top += (this.scrollTop * Number(this.settings.targetSpeed) * Number(t.speedY) - t.top) * this.settings.targetPercentage, t.left += (this.scrollTop * Number(this.settings.targetSpeed) * Number(t.speedX) - t.left) * this.settings.targetPercentage;
+          var e = parseInt(t.percentage) - t.top - parseInt(t.offset),
+            i = Math.round(-100 * e) / 100,
+            s = 0;
+          if (t.horizontal) {
+            var r = parseInt(t.percentage) - t.left - parseInt(t.offset);
+            s = Math.round(-100 * r) / 100
+          }
+          t.elm.style.transform = "translate3d(" + s + "px ," + i + "px ,0)"
+        },
+        resize: function() {
+          var t = this;
+          t.windowHeight = window.innerHeight || document.documentElement.clientHeight || 0, parseInt(t.wrapper.clientHeight) != parseInt(document.body.style.height) && (document.body.style.height = t.wrapper.clientHeight + "px"), t.resizeId = e(t.resize.bind(t))
+        },
+        attachEvent: function() {
+          var t = this;
+          window.addEventListener("resize", (function() {
+            t.isResize || (i(t.resizeId), i(t.scrollId), t.isResize = !0, setTimeout((function() {
+              t.isResize = !1, t.resizeId = e(t.resize.bind(t)), t.scrollId = e(t.animate.bind(t))
+            }), 200))
+          }))
+        }
+      }, new r
+    }));
+  </script>
+  <script>
+    luxy.init({
+      wrapper: '#luxy',
+      targets: '.luxy-el',
+      // wrapperSpeed:  1
+    });
+  </script>
+
+    <!-- cursor script-->
+    <script>
+      const $bigBall = document.querySelector('.cursor__ball--big');
+      const $smallBall = document.querySelector('.cursor__ball--small');
+      const $hoverables = document.querySelectorAll('a','img','button');
+
+      // Listeners
+      document.body.addEventListener('mousemove', onMouseMove);
+      for (let i = 0; i < $hoverables.length; i++) {
+        $hoverables[i].addEventListener('mouseenter', onMouseHover);
+        $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+      }
+
+      // Move the cursor
+      function onMouseMove(e) {
+        TweenMax.to($bigBall, .4, {
+          x: e.pageX -15,
+          y: e.pageY -15
+        })
+        TweenMax.to($smallBall, .1, {
+          x: e.pageX - 5,
+          y: e.pageY - 7
+        })
+      }
+
+      // Hover an element
+      function onMouseHover() {
+        gsap.to($bigBall, .3, {
+          scale: 3
+        })
+      } 
+      function onMouseHoverOut() {
+        gsap.to($bigBall, .3, {
+          scale: 1
+        })
+      }
+    </script>
+
+
+        <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!--Mdbootstrap JS-->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+    ></script>
+    <!-- Babel JS-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Tween max js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- gsap js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

@@ -1,0 +1,839 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  cursor: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* cursor */
+.cursor {
+  pointer-events: none;
+}
+
+.cursor__ball--big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+.cursor__ball--small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+circle {
+  fill: #ff4700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header section */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 24px 0;
+}
+
+.heading-tech h1 {
+  font-size: 40px;
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  padding: 12px;
+}
+
+#header .logo img {
+  position: absolute;
+  width: 90px;
+  height: 55px;
+  left: 140px;
+  top: 16px;
+  padding: 0;
+  margin: 0;
+  max-height: 60px;
+}
+#btnnav{
+  position: absolute;
+  height: 60px;
+}
+#header .nav-btn{
+  filter: invert(48%) sepia(96%) saturate(4805%) hue-rotate(359deg) brightness(99%) contrast(106%);
+  position: absolute;
+  width: 42.05px;
+  height: 43.81px;
+  top: 16px;
+  right: 140px;
+}
+
+@media (max-width: 768px) {
+  #header{
+    position: sticky;
+    padding: 0px;
+    /* width: 10px; */
+  }
+  #title{
+    position: absolute;
+    bottom: 151px;
+    left: 109px;
+  }
+
+  #header.header-scrolled {
+    /* padding: 15px 0; */
+  }
+  #header .logo img{
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    top: 19px;
+    left: 15px;
+  }
+  #btnnav{
+    position: absolute;
+    height: 50px;
+    left: 110px;
+  }
+  body{
+  width:107%;
+  }
+  /* #header .nav-btn{
+    position: absolute;
+    height: 100px;
+    width: 75px;
+    top: 20px;
+    right: 30px ;
+  } */
+ 
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  #header{
+    position: sticky;
+    padding: 0px;
+    /* padding: 185px; */
+    /* width: 10px; */
+  }
+
+  #header.header-scrolled {
+    padding: 15px 0;
+  }
+  #header .logo img{
+    position: absolute;
+    width: 152px;
+    min-height: 90px;
+    top: 25px;
+    left: 43px; 
+  }
+  #btnnav{
+    position: absolute;
+    height: 90px;
+    left: 103px;
+  }
+  #header .nav-btn{
+    position: absolute;
+    height: 100px;
+    width: 105px;
+    top: 25px;
+    right: 120px ;
+  
+  }
+  body{
+    width:100%;
+  }
+  
+}
+/* The sidepanel menu */
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidepanel .logo img {
+  padding: 15px 0px;
+  margin: 0;
+  max-height: 40px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .sidepanel a {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidepanel .hidden-mobile {
+    display: none;
+  }
+}
+
+.side h3 {
+  color: #ff4700;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.closebtn {
+  border: none;
+  padding: 0px 100px;
+}
+
+@media (max-width: 768px) {
+  .closebtn {
+    padding: 0px 0px;
+  }
+}
+
+.side {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* top section  
+
+.background {
+  background: url(../../images/about/image\ 42.png), #000000;
+  background-repeat: no-repeat;
+  /* background-size: cover; */ /*
+  width: 100%;
+  height: 100vh;
+  background-position: right;
+} */
+
+/*
+.background p {
+  color: orange;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff4700;
+}
+.background p span {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .background p {
+    font-size: 1.2rem;
+  }
+  .background p span {
+    font-size: 2rem;
+  }
+  .background {
+    background-position: center;
+  }
+}
+*/
+
+/* text after top  */
+
+.text-background {
+  background-color: #000000;
+  padding: 15% 15% 5% 15%;
+}
+
+.text-background p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.text-background .text1 {
+  margin-right: 40%;
+  margin-bottom: 15rem;
+}
+.text-background .text2 {
+  margin-left: 40%;
+  margin-top: 20%;
+}
+
+@media only screen and (max-width: 1059px) {
+  .text-background .text1 {
+    margin-right: 10%;
+  }
+  .text-background p {
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+  }
+  .text-background .text2 {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text-background .text1 {
+    margin-right: 0%;
+  }
+  .text-background p {
+    position: relative;
+    font-size: 1rem;
+    top: 3px;
+  }
+  .text-background .text2 {
+    margin-left: 0%;
+  }
+  #text1{
+    position: relative;
+    top: 95px;
+  }
+}
+
+/* body start  */
+.projects {
+  background-color: #000000;
+}
+.projects .sticky-text,
+.services .sticky-text {
+  position: absolute;
+  overflow: visible;
+  height: 220%;
+  left: 11vw;
+}
+
+.projects .sticky-text h1,
+.services .sticky-text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  writing-mode: vertical-lr;
+  transform: rotate(0deg);
+  color: #ffffff;
+  position: sticky;
+  top: 15%;
+}
+
+.projects .sticky-text {
+  height: 600%;
+}
+
+.projects.ps {
+  padding-left: 25%;
+}
+
+.projects.pe {
+  padding-right: 15%;
+}
+
+.projects.py {
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.projects .text {
+  font-size: 20px;
+  color: #ffffff;
+  width: 55%;
+  font-weight: 300;
+}
+.arrow {
+  font-size: 20px;
+  color: #ff4700;
+}
+.projects .orange-text,
+.services .orange-text {
+  color: #ff4700;
+  font-weight: 600;
+}
+.vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(0deg);
+  color: #ffffff;
+}
+.normal-text {
+  color: #ffffff;
+}
+.talk-to {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects .sticky-text {
+    height: 410%;
+  }
+  .projects .text {
+    font-size: 0.8rem;
+    width: 80%;
+  }
+  .projects .sticky-text,
+  .services .sticky-text {
+    left: 3vw;
+  }
+  .arrow {
+    font-size: 20px;
+  }
+  .projects .sticky-text h1 {
+    font-size: 1.2rem;
+  }
+  .projects.ps {
+    padding-left: 30%;
+  }
+
+  .projects.pe {
+    padding-right: 0%;
+  }
+}
+@media (max-width: 500px) {
+  .projects .sticky-text {
+    height: 500%;
+  }
+}
+
+/* services  */
+
+.marg {
+  margin-bottom: 25%;
+}
+
+.services {
+  background-color: #000000;
+}
+
+.services.ps {
+  padding-left: 25%;
+}
+
+.services.pe {
+  padding-right: 15%;
+}
+
+.services.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.services .text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 50%;
+}
+.services .sticky-text {
+  height: 300%;
+}
+
+.pad-x {
+  padding: 5rem 0rem;
+}
+.services .list {
+  font-size: 1.2rem;
+}
+.services .list p {
+  color: #ff4700;
+  font-weight: 600;
+}
+.services ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.services .last-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1000px) {
+  .services .text {
+    font-size: 0.8rem;
+    width: 60%;
+  }
+  .pad-x {
+    padding: 2rem 0rem;
+  }
+
+  .services .sticky-text h1 {
+    font-size: 1.2rem;
+  }
+  .services.ps {
+    padding-left: 30%;
+  }
+
+  .services.pe {
+    padding-right: 0%;
+  }
+  .services .sticky-text {
+    height: 260%;
+  }
+  .services .list {
+    font-size: 0.8rem;
+  }
+}
+/* FOOTER  */
+
+/* upper-footer   */
+
+.upper-container {
+  background-color: #000000;
+  width: 100%;
+}
+.form-field input {
+  font-size: 20px;
+}
+.form-field textarea {
+  font-size: 20px;
+}
+.upper-section-footer .text-start {
+  font-size: 1rem;
+}
+.upper-section-footer .upper-text h2 {
+  font-size: 1rem;
+}
+/*social media icons*/
+.label {
+  font-size: 4rem;
+}
+.text {
+  font-size: 0.8rem;
+}
+.upper-contact p {
+  font-size: 1rem;
+}
+
+.start-form .sub-but input {
+  border-style: outset;
+  border-width: 2px;
+  border-color: #767676 #212121 #767676 #767676;
+  margin-right: 9.4rem;
+}
+@media only screen and (max-width: 700px) {
+  .upper-section-footer .text-start {
+    font-size: 0.8rem;
+  }
+  .start-form .sub-but input {
+    margin-right: 0rem;
+  }
+  .upper-section-footer .upper-text h2 {
+    font-size: 1.2rem;
+  }
+  .upper-contact p {
+    font-size: 0.8rem;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
+  .lower-container .text-row .row ul li {
+    font-size: 0.6rem;
+  }
+}
+/* lower-footer */
+
+.lower-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.lower-container .text-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3% 10% 3% 10%;
+}
+.lower-container .text-row .row ul {
+  list-style: none;
+}
+
+.lower-container .text-row .row ul {
+  margin: auto;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+  width: 140.29px;
+  height: 20.99px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+/* identical to box height */
+  color: #ffffff;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
+}
+.lower-container .text-row .row ul li {
+  padding: 10px 0px;
+  color: #ffffff;
+}
+.start-form input,
+.start-form textarea {
+  background-color: #808080;
+  outline: none;
+  color: white;
+  padding: 4px 10px;
+}
+
+.lower-container .image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+}
+.lower-container .image-row img {
+  height: 34px;
+}
+.lower-container .image-row p {
+   
+  position: relative;
+  left: 198px;
+  bottom: 27.45px; 
+
+  width: 350.73px;
+  height: 29.55px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+#eu{
+  position: absolute;
+  top: 1554.8vh;
+  left: 700px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#circle{
+  position: absolute;
+  top: 1552.1vh;
+  left: 840px;
+
+  width: 70px;
+  height: 70px;
+  background: url(.png);
+  mix-blend-mode: normal;
+}
+#kaashl{
+  position: absolute;
+  top: 1552.8vh;
+  left: 200px;
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+}
+#kaashe{
+  position: relative;
+  top: -8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  left: 95px;
+}
+#luxembourg{
+  position: relative;
+  top: -8px;
+  left: 140px;
+  width: 26%;
+  height: 45px;
+  background: url(Luxembourg White.png);
+  mix-blend-mode: normal;
+}
+
+
+.start-form input {
+  width: 18rem;
+}
+.start-form textarea {
+  resize: none;
+  width: 83%;
+  border-style: inset;
+  border-width: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .lower-container .text-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3% 10% 3% 10%;
+    padding-bottom: 100px;
+  }
+
+  .lover-container .image-row{
+    display: flex;
+  }
+
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form input {
+    width: 11.2rem;
+  }
+
+  .start-form textarea {
+    resize: none;
+    width: 72%;
+  }
+  .lower-container .text-row .row ul li {
+    display: inline-block;
+    width: 54.29px;
+    height: 20.99px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form input {
+    width: 11.2rem;
+  }
+
+  .start-form textarea {
+    resize: none;
+    width: 72%;
+  }
+  #kaashl{
+    position: absolute;
+    left: 24px;
+    top: 630.9rem;
+    font-size: 18px;
+    /* padding: 100px; */
+    /* margin-right: 32px; */
+  }
+  #kaashe{
+    
+    position: absolute;
+    left: 54.4vh;
+    top: 631.9rem;
+    font-size: 18px;
+    left: 24px;
+  }
+  #circle{
+    position: absolute;
+    top: 631.3rem;
+    left: 27.4vh;
+    width: 65px;
+    height: 65px;
+    background: url(.png);
+    mix-blend-mode: normal;
+  }
+  #eu{
+    position: absolute;
+    top: 632.5rem;
+    left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  #luxembourg{
+    position: absolute;
+    top: 631.9rem;
+    left: 35.4vh;
+    width: 42%;
+    height: 45px;
+    background: url(Luxembourg White.png);
+    mix-blend-mode: normal;
+  }
+  body{
+    width:104%;
+  }
+  
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+#kaashl{
+    position:absolute;
+    top: 890vh;
+    left: 48px;
+    font-size: 22px;
+  }
+  #kaashe{
+    position:absolute;
+    top: 890vh;
+    left: 195px;
+    font-size: 22px;
+  }
+  #circle{
+    position: absolute; 
+    top: 889.5vh;
+    left: 32.8vh;
+    width: 65px;
+    height: 65px;
+    background: url(.png);
+    mix-blend-mode: normal;
+  }
+  #eu{
+    position: absolute;
+    top: 891.5vh;
+    left: 34.2vh;
+    width: 20px;
+    height: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  #luxembourg{
+    position: relative;
+    left: 60px;
+    width: 36%;
+    height: 45px;
+    background: url(Luxembourg White.png);
+    mix-blend-mode: normal;
+  }
+}
